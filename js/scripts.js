@@ -46,9 +46,33 @@ const ourTeam = [
     },
 ];
 console.log(ourTeam, typeof ourTeam);
-
+const myCards = document.getElementById('my-cards-container');
 for (let i = 0; i < ourTeam.length; i++) {
+    // milestone 1
     console.log(ourTeam[i]);
+    console.log(ourTeam[i]['name']);
+    console.log(ourTeam[i]['role']);
+    console.log(ourTeam[i]['image']);
+    // milestone 2
+    myCards.innerHTML += `
+
+        <div class="col-4" >
+            <div class="card">
+                <div>
+                    ${ourTeam[i]['name']}
+                </div>
+                <div>
+                    ${ourTeam[i]['role']}
+                </div>
+                <div>
+                    ${ourTeam[i]['image']}
+                </div>
+            
+            </div>
+        </div>
+        
+    `;
+
 
 }
 
