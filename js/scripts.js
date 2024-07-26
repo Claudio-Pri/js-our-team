@@ -1,5 +1,3 @@
-console.log('js collegato');
-
 //===== Appunti ======
 // ` backtick
 
@@ -56,18 +54,18 @@ for (let i = 0; i < ourTeam.length; i++) {
     // milestone 2
     myCards.innerHTML += `
 
-        <div class="col-4" >
-            <div class="card">
+        <div class="col-4 my-3" >
+            <div class="card h-100 p-4 bg-info-subtle">
                 <div>
+                   <img src=img/${ourTeam[i]['image']} class="img-fluid mb-2">
+                </div>
+                <div class="fw-bold">
                     ${ourTeam[i]['name']}
                 </div>
-                <div>
+                <div class="fw-bold">
                     ${ourTeam[i]['role']}
                 </div>
-                <div>
-                    ${ourTeam[i]['image']}
-                </div>
-            
+               
             </div>
         </div>
         
