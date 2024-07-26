@@ -57,13 +57,13 @@ for (let i = 0; i < ourTeam.length; i++) {
         <div class="col-4 my-3" >
             <div class="card h-100 p-4 bg-info-subtle">
                 <div>
-                   <img src=img/${ourTeam[i]['image']} class="img-fluid mb-2">
+                   <img src="img/${ourTeam[i]['image']}" class="img-fluid mb-2">
                 </div>
-                <div class="fw-bold">
+                <div class="fw-bold fs-3">
                     ${ourTeam[i]['name']}
                 </div>
-                <div class="fw-bold">
-                    ${ourTeam[i]['role']}
+                <div class="fw-bold text-info">
+                  <em>${ourTeam[i]['role']}</em>
                 </div>
                
             </div>
